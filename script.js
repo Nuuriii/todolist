@@ -12,10 +12,10 @@ function inputLength() {
 function createListElement() {
   var li = document.createElement("li");
   var span1 = document.createElement("span");
-  // span.setAttribute("onclick", "span(this)");
+  
   span1.setAttribute("onclick", "togle(this)");
   span1.appendChild(document.createTextNode(input.value));
-  //span.appendChild(document.createTextNode("[X]"));
+  
   ul.appendChild(li);
   li.appendChild(span1);
 
