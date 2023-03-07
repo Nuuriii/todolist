@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript DOM</title>
+    <title>Todolist</title>
     <style>
       .done {
         text-decoration: line-through;
+        color: green;
       }
     </style>
   </head>
   <body>
-    <h1>My Todo</h1>
-    <p id="pertama">Tugas saya untuk hari ini</p>
-    <p class="kedua">Harus selesai</p>
-    <input id="input_Pengguna" type="text" />
-    <button id="tombol_Enter">Enter</button>
-    <ul></ul>
+    <h1>Hello <span id="name"></span></h1>
+    <strong>what is today's task?</strong><br />
+    <br /><input id="input" type="text" />
+    <button onclick="addTodo()" id="button">Enter</button>
+    <ul id="ul"></ul>
     <script src="script.js"></script>
   </body>
 </html>
