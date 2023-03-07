@@ -10,11 +10,13 @@ function inputLength() {
   return input.value.length;
 }
 
+
 function newInputUser() {
   let button = document.getElementById("button");
   let input = document.getElementById("input");
   let li = "<li><span onclick='done(this)'>" + input.value + "</span>" + "<span onclick='remove(this)'>" + " [x]" + "</span>" + "</li>";
   ul.insertAdjacentHTML("afterbegin", li);
+
   input.value = "";
 }
 
